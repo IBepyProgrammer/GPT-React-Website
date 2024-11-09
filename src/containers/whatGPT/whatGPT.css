@@ -1,0 +1,91 @@
+.gpt__whatGPT {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+    /*code below generated using angrytools.com*/
+    background: radial-gradient(circle at 24% 28%, rgba(15, 66, 121, 1) 16%, rgba(27, 120, 222, 1) 100%);
+}
+
+/* Customize the feature in front of the P-tag*/
+.gpt__whatGPT-feature {
+    display: flex;
+}
+
+/*Customize the features below the P-tag */
+.gpt__whatGPT-feature .gpt__features-container__feature {
+    margin: 0;
+}
+
+/* Customize the text of the features above in the P-tag below. */
+.gpt__whatGPT-feature .gpt__features-container_feature-text {
+    max-width: 700px;
+}
+
+.gpt__whatGPT-heading {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4rem 0 2rem;
+}
+
+.gpt__whatGPT-heading h1 {
+    font-family: var(--font-family);
+    font-size: 34px;
+    font-weight: 800;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.gpt__whatGPT-heading p {
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FF8A71;
+    cursor: pointer;
+}
+.gpt__whatGPT-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 850px) {
+    .gpt__whatGPT-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .gpt__whatGPT-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .gpt__whatGPT-feature .gpt__features-container__feature {
+        flex-direction: column;
+    }
+
+    .gpt__whatGPT-feature .gpt__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .gpt__whatGPT-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .gpt__whatGPT-container .gpt__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}

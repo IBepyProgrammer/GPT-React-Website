@@ -1,0 +1,85 @@
+/* for all the elements */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--color-bg);
+}
+
+/* for all the anchor tags */
+a {
+    color: unset;
+    text-decoration: none;
+}
+
+/* In order to add a gradient to your background, use "https://angrytools.com/gradient/" and create
+a custom gradient for your app. */
+
+.gradient__bg {
+    /*Paste the code from the site above*/
+
+    background: radial-gradient(circle at 3% 25%, rgba(119, 157, 197, 1) 0%, rgba(4, 12, 24, 1) 100%);
+}
+
+.gradient__text {
+    background: var(--gradient-text);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section__padding {
+    padding: 4rem 6rem;
+}
+
+.section__margin {
+    margin: 4rem 6rem;
+}
+
+/*We then add custom css animations from "https://animista.net/play/basic/slide-fwd"*/
+.slide-fwd-center {
+	-webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+}
+@keyframes slide-fwd-center {
+    0% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+    }
+    100% {
+      -webkit-transform: translateZ(160px);
+              transform: translateZ(160px);
+    }
+}
+@media screen and (max-width:700px){
+    /*for tablets/bigger devices*/
+    .section__padding{
+        padding:4rem;
+    }
+    .section__margin{
+        margin:4rem;
+    }
+}
+@media screen and (max-width:550px){
+    /*for mobile devices*/
+    .section__padding{
+        padding:4rem 2rem;
+    }
+    .section__margin{
+        margin:4rem 2rem;
+    }
+}
